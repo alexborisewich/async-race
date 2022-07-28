@@ -1,0 +1,36 @@
+{
+  "root":true,
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "airbnb-typescript/base",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "import", "@typescript-eslint"],
+  "ignorePatterns": ["dist"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error",
+    "max-lines-per-function": ["error", 40],
+    "no-console": [ "warn", { "allow": ["error", "warn"] }],
+    "max-len": ["warn", { "code": 120 }],
+    "indent": "off",
+    "@typescript-eslint/indent": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-unused-vars": 1,
+  "@typescript-eslint/no-unused-vars": ["warn"]
+  }
+}
