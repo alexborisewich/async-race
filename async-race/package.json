@@ -12,7 +12,7 @@
         "start": "webpack serve --open --mode=development --node-env=development",
         "lint": "eslint --fix --ext .js --ext .ts .",
         "prettier": "prettier --write \"src/**/*.{ts,js,css,json}\"",
-        "deploy": "gh-pages -d ../dist -e async-race"
+        "deploy": "gh-pages -d ../async-race/dist -e async-race"
     },
     "repository": {
         "type": "git",
